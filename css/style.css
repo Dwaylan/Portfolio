@@ -63,6 +63,7 @@ body {
 
 .skill {
   text-align: center;
+  margin-left: 10px;
 }
 
 .chart {
@@ -70,6 +71,22 @@ body {
   width: 152px;
   height: 152px;
   display: inline-block;
-  margin-left: 25px;
   text-align: center;
+}
+
+.chart canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.percent {
+  color: #000;
+  line-height: 152px;
+  display: inline-block;
+  font-size: 35px;
+}
+
+.chart .percent:after {
+  content: "%";
 }
