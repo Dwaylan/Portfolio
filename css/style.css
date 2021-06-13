@@ -60,3 +60,16 @@ body {
   background-color: #7a6670;
   color: #fff;
 }
+
+.skill {
+  text-align: center;
+}
+
+.chart {
+  position: relative;
+  width: 152px;
+  height: 152px;
+  display: inline-block;
+  margin-left: 25px;
+  text-align: center;
+}
