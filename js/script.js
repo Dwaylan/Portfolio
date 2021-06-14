@@ -16,7 +16,7 @@ var typed = new Typed(".typed", {
 
 $(".owl-carousel").owlCarousel({
   loop: true,
-  items: 4,
+  items: 5,
   responsive: {
     0: {
       items: 1,
@@ -28,20 +28,29 @@ $(".owl-carousel").owlCarousel({
       items: 3,
     },
     938: {
-      items: 4,
+      items: 5,
     },
   },
 });
 
-$(".chart").easyPieChart({
-  //your options goes here
-  easting: "easeInOut",
-  barColor: "#fff",
-  trackColor: "false",
-  scaleColor: "false",
-  lineWidth: 4,
-  size: 152,
-  onStep: function (from, to, percent) {
-    $(this.el).find(".percent").text(Math.round(percent));
-  },
+var skillsTopOffset = $(".skillsSection").offset().top;
+
+$(window).scroll(function () {
+  if (
+    this.window.pageYOffset >
+    this.skillsTopOffset - $(window).height() + 200
+  ) {
+    $(".chart").easyPieChart({
+      //your options goes here
+      easting: "easeInOut",
+      barColor: "#fff",
+      trackColor: false,
+      scaleColor: false,
+      lineWidth: 4,
+      size: 152,
+      onStep: function (from, to, percent) {
+        $(this.el).find(".percent").text(Math.round(percent));
+      },
+    });
+  }
 });
