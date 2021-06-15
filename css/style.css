@@ -207,6 +207,11 @@ body {
 
 .items li img {
   width: 100%;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  transition: all 0.2s linear, 1s;
 }
 
 .items .item {
@@ -238,6 +243,11 @@ body {
   background-color: #7a6670;
   position: relative;
   display: inline-block;
+  -webkit-transition: all 0.2s linear, 0.3s;
+  -moz-transition: all 0.2s linear, 0.3s;
+  -o-transition: all 0.2s linear, 0.3s;
+  -ms-transition: all 0.2s linear, 0.3s;
+  transition: all 0.2s linear, 0.3s;
 }
 
 .items .imageOverlay {
@@ -248,6 +258,11 @@ body {
   left: 0px;
   top: 0px;
   opacity: 0;
+  -webkit-transition: all 0.2s linear, 1s;
+  -moz-transition: all 0.2s linear, 1s;
+  -o-transition: all 0.2s linear, 1s;
+  -ms-transition: all 0.2s linear, 1s;
+  transition: all 0.2s linear, 1s;
 }
 
 .items .item:hover .imageOverlay {
@@ -270,4 +285,16 @@ body {
 
 .items .item:hover .projectLink {
   right: 0px;
+}
+
+.items .item:hover img {
+  -webkit-tranform: scale(1.05, 1.05);
+  -moz-transform: scale(1.05, 1.05);
+  -o-transform: scale(1.05, 1.05s);
+  -ms-transform: scale(1.05, 1.05s);
+  transform: scale(1.05, 1.05s);
+}
+
+.items {
+  padding: 0;
 }
