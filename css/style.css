@@ -180,14 +180,14 @@ body {
   padding: 5px;
 }
 
-.a:hover {
+.filter a:hover {
   color: white;
   background-color: #7a6670;
 }
 
-.filter .current:hover {
-  background-color: #fff;
-  color: #7a6670;
+.filter .current {
+  background-color: #7a6670;
+  color: #fff;
 }
 
 .section .heading {
