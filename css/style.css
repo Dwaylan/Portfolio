@@ -153,9 +153,45 @@ body {
   margin-top: 20px;
   border: 1px solid #fff;
   border-radius: 2px;
+  text-decoration: none;
 }
 
 .contactButton:hover {
   color: #7a6670;
   background-color: #fff;
+  text-decoration: none;
+}
+
+.filter {
+  text-align: center;
+  width: 100%;
+}
+
+.filter a {
+  color: grey;
+  border: 1px solid grey;
+  padding: 10px 18px;
+  display: block;
+  text-decoration: none;
+}
+
+.filter li {
+  display: inline-block;
+  padding: 5px;
+}
+
+.a:hover {
+  color: white;
+  background-color: #7a6670;
+}
+
+.filter .current:hover {
+  background-color: #fff;
+  color: #7a6670;
+}
+
+.section .heading {
+  text-align: center;
+  padding-bottom: 40px;
+  width: 100%;
 }
