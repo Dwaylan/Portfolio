@@ -21,7 +21,7 @@ body {
   background-repeat: no-repeat;
 }
 
-.slides-navigation a.prev {
+/* .slides-navigation a.prev {
   left: 20px;
   background-image: url(../img/icons/shot-prev.png);
 }
@@ -29,7 +29,7 @@ body {
 .slides-navigation a.next {
   right: 20px;
   background-image: url(../img/icons/next.png);
-}
+} */
 
 .titleMessage {
   position: absolute;
